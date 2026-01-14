@@ -1,0 +1,66 @@
+@import "./quasar-variables";
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline-color: $primary !important;
+}
+
+::-webkit-scrollbar {
+  height: .5rem;
+  width: .5rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  padding: 1rem;
+}
+
+a {
+  color: currentcolor;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .3s;
+
+  &:focus,
+  &:hover {
+    color: $primary;
+  }
+}
+
+label {
+  cursor: inherit;
+  margin-bottom: 0;
+
+  &:not(:last-child) {
+    margin-right: #{spacer(1)};
+  }
+
+  +label,
+  +span {
+    vertical-align: middle;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hand-cursor {
+  cursor: pointer;
+}
+
+.text-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
