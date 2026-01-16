@@ -28,6 +28,13 @@
           <q-badge>{{ cartStore.totalCartItemsNumber }}</q-badge>
         </q-item-section>
       </q-item>
+      <q-item
+        class="items-center"
+        tag="a"
+        :to="{ name: 'admin' }"
+      >
+        Admin
+      </q-item>
     </q-list>
   </q-drawer>
 </template>
